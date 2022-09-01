@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="shortcut icon"
+      href="../img/burgerpngdc2f02.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- BARRA DE NAVEGACION -->
+      <!-- Logo -->
+      <a href="../index.html">
+        <img src="../img/burgerCienPx.png" alt="Logo hamburguesa" />
+      </a>
+      <!-- Items de la barra de navegación -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+          <li><a href="../pages/quienesSomos.html">¿QUIENES SOMOS?</a></li>
+          <li><a href="../pages/contacto.html">CONTACTO</a></li>
+          <li><a href="../pages/locales.html">LOCALES</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Titulo de la pagina -->
+      <h1>Contactanos</h1>
+
+      <!-- Formulario de contacto -->
+      <fieldset>
+        <form action="">
+          <!-- Datod del cliente -->
+
+          <!-- Nombre -->
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Escriba aqui su nombre."
+            />
+          </div>
+
+          <!-- Apellido -->
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Escriba aqui su apellido."
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="ejemplo@gmail.com" />
+          </div>
+
+          <!-- Celular -->
+          <div>
+            <label for="celular">Celular:</label>
+            <input type="text" name="celular" placeholder="351 XXX XXXX" />
+          </div>
+
+          <!-- Sexo -->
+          <div>
+            <span>Hombre</span>
+            <input type="radio" name="sexo" value="hombre" />
+            <span>Mujer</span>
+            <input type="radio" name="sexo" value="mujer" />
+          </div>
+
+          <!-- Menu desplegable asunto -->
+          <div>
+            <select name="asunto" id="asuntoContacto">
+              <option value="critica">Crítica</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="reclamo">Reclamo</option>
+              <option value="trabajarNosotros">Trabajar con nosotros</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <!-- Mensaje -->
+          <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              name="mensaje"
+              id="mensajeContacto"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <!-- Botones -->
+          <input type="reset" value="Cancelar" />
+          <input type="submit" value="Enviar" />
+        </form>
+      </fieldset>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <!-- iconos sociales -->
+      <p class="footer__text">¡Seguinos en nuestras redes!</p>
+      <div>
+        <img
+          class="footer__logoRedes"
+          src="../img/twitter20x20.png"
+          alt="Logo Twitter"
+        />
+        <img
+          class="footer__logoRedes"
+          src="../img/whatsapp20x20.png"
+          alt="Logo Whatsapp"
+        />
+        <img
+          class="footer__logoRedes"
+          src="../img/insta20x20.png"
+          alt="Logo Instagram"
+        />
+      </div>
+
+      <div class="footer-bottom__copyright">
+        &copy; Copyright 2022 <a href="#">Logoipsum</a> | Creada por Marcelo
+        Marochi
+      </div>
+    </footer>
+  </body>
+</html>
