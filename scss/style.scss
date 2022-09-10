@@ -21,4 +21,93 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+
+  header {
+    background-color: #e0e0e0;
+    position: sticky;
+    text-align: center;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: map-get($colores, $key: rojo);
+    /* Barra de navegacion */
+    /* Etiqueta ul */
+    .nav__list {
+      list-style: none;
+      display: inline-block;
+      margin-bottom: 1rem;
+
+      /* Etiqueta li */
+      .nav__item {
+        /* Etiqueta a */
+        margin-top: 1rem;
+
+        .nav__link {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: map-get($colores, $key: rojo);
+        }
+
+        .nav__link:hover,
+        .nav__link:focus {
+          opacity: 0.65;
+        }
+      }
+    }
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  footer {
+    background-color: map-get($colores, $key: rojo);
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .footer__text {
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+    text-shadow: black 0.08em 0.08em 0.2em;
+  }
+
+  .footer__logoRedes {
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* --------- MEDIA -------------- */
+@media (min-width: 768px) {
+  header {
+    position: sticky;
+    .row {
+      display: flex;
+      padding: 2rem 2rem;
+      align-items: center;
+      justify-content: space-around;
+
+      .nav__list {
+        .nav__item {
+          display: inline-block;
+          margin-left: 2.5rem;
+          justify-items: flex-end;
+          /* margin-left: 2rem; */
+          /* font-size: 3rem; */
+
+          .nav__link {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer__text {
+      font-size: 1.8rem;
+    }
+  }
 }

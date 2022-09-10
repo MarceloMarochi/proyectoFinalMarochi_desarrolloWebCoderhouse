@@ -1,0 +1,32 @@
+$colores: (
+  naranja: #ffbe0b,
+  rojo: #dc2f02,
+);
+/* ---------------- QUIENES ---------------- */
+.principalQui {
+  height: 100%;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+}
+
+.principalQui__title {
+  text-transform: uppercase;
+  color: map-get($colores, $key: rojo);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.principalQui__text {
+  font-weight: 500;
+  color: #3a180f;
+  margin-bottom: 1.3rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .principalQui__text {
+    margin: 3rem 0;
+  }
+}

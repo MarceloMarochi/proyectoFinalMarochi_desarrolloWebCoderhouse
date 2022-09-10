@@ -19,58 +19,65 @@
   </head>
   <body>
     <header>
-      <!-- BARRA DE NAVEGACION -->
-      <!-- Logo -->
-      <a href="../index.html">
-        <img
-          class="nav__logo"
-          src="../img/burgerCienPx.png"
-          alt="Logo hamburguesa"
-        />
-      </a>
-      <!-- Items de la barra de navegación -->
-      <nav>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="../index.html">INICIO</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="../pages/productos.html">PRODUCTOS</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="../pages/quienesSomos.html"
-              >¿QUIENES SOMOS?</a
-            >
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="../pages/contacto.html">CONTACTO</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="../pages/locales.html">LOCALES</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="row">
+        <!-- BARRA DE NAVEGACION -->
+        <!-- Logo -->
+        <a href="../index.html">
+          <img
+            class="nav__logo"
+            src="../img/burgerCienPx.png"
+            alt="Logo hamburguesa"
+          />
+        </a>
+        <!-- Items de la barra de navegación -->
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../pages/productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../pages/quienesSomos.html"
+                >¿QUIENES SOMOS?</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../pages/contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../pages/locales.html">LOCALES</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <!-- Titulo -->
-      <h1>¿Quiénes Somos?</h1>
+      <section class="principalQui">
+        <div class="container">
+          <!-- Titulo -->
+          <h1 class="principalQui__title">¿Quiénes Somos?</h1>
 
-      <!-- Parrafo -->
-      <p>
-        Stroke & Stone Burger es una hamburguesería de la Ciudad de Córdoba con
-        el mejor producto hamburguesero de la región. Trabajamos para ofrecer
-        productos que compitan a nivel internacional, teniendo claras las bases
-        y respetando los principios que debe cumplir la hamburguesa. Hacemos y
-        ofrecemos lo que nos gusta, y intentamos que el cliente siempre se lleve
-        una experiencia valiosa al visitarnos.
-      </p>
+          <!-- Parrafo -->
+          <p class="principalQui__text">
+            Stroke & Stone Burger es una hamburguesería de la Ciudad de Córdoba
+            con el mejor producto hamburguesero de la región. Trabajamos para
+            ofrecer productos que compitan a nivel internacional, teniendo
+            claras las bases y respetando los principios que debe cumplir la
+            hamburguesa. Hacemos y ofrecemos lo que nos gusta, y intentamos que
+            el cliente siempre se lleve una experiencia valiosa al visitarnos.
+          </p>
 
-      <!-- Imagen -->
-      <img
-        src="../img/local600x800.png"
-        alt="Fachada del local de la empresa."
-      />
+          <!-- Imagen -->
+          <img
+            class="principalQui__img"
+            src="../img/local600x800.png"
+            alt="Fachada del local de la empresa."
+          />
+        </div>
+      </section>
     </main>
 
     <!-- Pie de página -->
@@ -95,7 +102,7 @@
         />
       </div>
 
-      <div class="footer-bottom__copyright">
+      <div class="footer-bottom__copyright footer__text">
         &copy; Copyright 2022 <a href="#">Logoipsum</a> | Creada por Marcelo
         Marochi
       </div>

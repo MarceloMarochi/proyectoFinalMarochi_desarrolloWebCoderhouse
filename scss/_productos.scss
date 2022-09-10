@@ -1,0 +1,79 @@
+$colores: (
+  naranja: #ffbe0b,
+  rojo: #dc2f02,
+);
+img {
+  max-width: 650px;
+}
+
+.productos_name {
+  color: map-get($colores, $key: rojo);
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.etiquetas__container {
+  width: 95%;
+  margin: 2rem 0;
+  text-align: center;
+  padding-left: 10%;
+
+  .tarjeta {
+    max-height: 600px;
+    max-width: 400px;
+    margin-top: 1.5rem;
+    border-radius: 3rem;
+    background-color: #dc2f02;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tarjeta__titulo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+
+  .tarjeta__info__desc {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: white;
+  }
+
+  .tarjeta__info__precio {
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__product {
+    min-height: 70vh;
+  }
+  .etiquetas__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .tarjeta {
+    margin: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productos_name {
+    font-size: 4rem;
+  }
+  .section__product {
+    margin: 5rem 0 10rem 0;
+  }
+}

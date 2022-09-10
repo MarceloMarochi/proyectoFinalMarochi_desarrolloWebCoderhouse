@@ -2,3 +2,210 @@ $colores: (
   naranja: #ffbe0b,
   rojo: #dc2f02,
 );
+
+/* --------- PRIMERA SECCION ----------- */
+.section1 {
+  background-image: url(../img/fondoBurger.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
+  position: relative;
+  padding-bottom: 4rem;
+  margin: 2rem 0;
+
+  .principal__name {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
+  .principal__slogan {
+    text-align: center;
+  }
+
+  .principal__button {
+    position: relative;
+    background: map-get($colores, $key: rojo);
+    text-transform: uppercase;
+    padding: 0.93rem 3.3rem 0.93rem 1.2rem;
+    font-weight: 700;
+    border: 0.3rem solid white;
+    border-radius: 50rem;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    font-size: large;
+    transition: all 0.5s;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .button__link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .button__link:hover {
+      color: white;
+    }
+
+    .button__link:hover span {
+      background-color: rgba(#000, 0.6);
+    }
+
+    .button__link:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0%;
+      width: 100%;
+      background: linear-gradient(to right, #dc2f02, #5c1200);
+      z-index: -1;
+      border-radius: 0 0 50% 50%;
+      transition: all 0.5s;
+    }
+    .button__link:hover:before {
+      height: 190%;
+    }
+  }
+}
+
+/* --------- SEGUNDA SECCION ---------- */
+.section2 {
+  padding: 2rem 0;
+  border-top-width: thick;
+  border-top-style: solid;
+  border-top-color: map-get($colores, $key: rojo);
+
+  .columnas__first {
+    /* ↓ Acomodar el texto adentro */
+    position: relative;
+    margin-bottom: 2rem;
+
+    .columnas__first--titulo {
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-size: 2rem;
+      font-weight: 650;
+      /* ↓ Acomodar el texto adentro */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .columnas__first--image {
+      filter: blur(0.2rem);
+    }
+  }
+
+  .columnas__second {
+    position: relative;
+
+    .columnas__second--titulo {
+      text-decoration: none;
+      text-transform: capitalize;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-size: 2rem;
+      font-weight: 650;
+      /* ↓ Acomodar el texto adentro */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .columnas__second--image {
+      filter: blur(0.2rem);
+    }
+  }
+
+  .columnas__third {
+    position: relative;
+    margin-top: 2rem;
+
+    .columnas__third--titulo {
+      text-decoration: none;
+      text-transform: capitalize;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-size: 2rem;
+      font-weight: 650;
+      /* ↓ Acomodar el texto adentro */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .columnas__third--image {
+      filter: blur(0.2rem);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section1 {
+    .principal__name {
+      text-align: left;
+      font-size: 4rem;
+      font-weight: 800;
+      padding: 4rem 0;
+      justify-content: space-around;
+    }
+
+    .section1__flex {
+      display: flex;
+      flex-direction: row;
+
+      .section1__column1 {
+        text-align: center;
+        align-items: center;
+        .principal__slogan {
+          margin-bottom: 3rem;
+        }
+      }
+      .section1__column2 {
+        align-items: right;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .section2 {
+    .row3 {
+      margin: 2rem 0;
+      display: flex;
+      .columnas__first {
+        margin: 0 2rem 0 0;
+      }
+
+      .columnas__third {
+        margin: 0 0 0 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section1 {
+    min-height: 70vh;
+  }
+
+  .principal__name {
+    padding-top: 20rem;
+    margin-left: 5rem;
+  }
+  .section1__flex {
+    align-items: center;
+    margin-left: 15rem;
+  }
+}
